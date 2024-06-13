@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+body {
+    background-color: #F56600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+}
+
+p {
+    font-size: 30px;
+}
+
+header {
+    background-color: #F59B59;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+/* ---------------darkmode---------------- */
+
+.toggle-label {
+    width: 60px;
+    margin-left: 80%;
+    margin-top: 20%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+
+}
+
+.toggle-label:before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: rgb(255, 136, 0);
+    border: solid black 1px;
+
+}
+
+.toggle-btn:checked+.toggle-label {
+    background-color: rgb(120, 233, 130);
+}
+
+.toggle-btn:checked+.toggle-label:before {
+    background-color: rgb(255, 255, 255);
+    transform: translateX(30px);
+}
+
+.toggle-btn {
+    display: none;
+}
+
+.dark-mode {
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+.dark-mode header {
+    color: rgb(255, 255, 255);
+    background-color: rgb(68, 68, 68);
+}
+
+.dark-mode img {
+    border: solid rgb(0, 0, 0) 7px;
+    border-radius: 25px;
+}
+
+.dark-mode img:hover {
+    border: solid rgb(255, 255, 255) 7px;
+    border-radius: 25px;
+}
+
+.dark-mode .cell {
+    box-shadow: 8px 8px 8px greenyellow;
+
+}
+
+/* ----------final darkmode----------- */
+
+img {
+    border-radius: 20px;
+}
+
+img {
+    border: solid rgb(255, 255, 255) 7px;
+    border-radius: 25px;
+}
+
+img:hover {
+    border: solid black 7px;
+    border-radius: 25px;
+}
+
+input {
+    margin-left: 7%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+form {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+.pedido {
+    margin-top: 1em;
+}
+
+.sabor {
+    margin-bottom: 60px;
+    margin-top: 15px;
+    font-size: 27px;
+}
+
+.tamanho {
+    margin-bottom: 60px;
+    margin-top: 15px;
+    font-size: 27px;
+}
+
+.bebida {
+    margin-bottom: 60px;
+    margin-top: 15px;
+    font-size: 27px;
+}
+
+.finalizar {
+    font-size: 27px;
+    margin-left: 23%;
+    margin-bottom: 60px;
+}
+
+.pedidos {
+    padding: 40px;
+    text-align: left;
+    background-color: #f5dd0065;
+    border-radius: 20px;
+    box-shadow: 4px 4px 7px;
+    margin-bottom: 40px;
+}
+
+.numero {
+    font-size: 23px;
+    margin-left: -1px;
+}
+
+
+footer {
+    border-radius: 15px;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: #0000003a;
+    font-size: 15px;
+    color: white;
+}
